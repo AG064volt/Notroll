@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простой Секрет</title>
+    <script>
+    </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        h6{
+            font-size: 6px;
+        }
+
+        .hint {
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 30px;
+            cursor: pointer; /* Указываем, что элемент кликабельный */
+            text-decoration: underline dashed rgba(0, 0, 0, 0.3);
+        }
+
+        .secret {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            display: none; /* Скрываем секретный блок по умолчанию */
+        }
+
+        .secret h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .secret2 {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Поздровляем! Вы нашли секрет.</h1>
+        <p>Это выглядит как обычный простой сайт, не так ли?</p>
+        <p>Но, возможно, здесь есть что-то еще...</p>
+
+        <div class="hint" onclick="revealSecret()">Подсказка</div>
+
+        <div class="secret" id="secretContent">
+            <h2>Секрет раскрыт!</h2>
+            <p>Вы нашли скрытый контент. Поздравляем!</p>
+            <p>Иногда за простой оболочкой скрывается нечто большее.</p>
+            <h6>Но он точно не в консоли.</h6>
+            <div class="hint" onclick="consolOpen()"><h6>Открыть консоль</h6></div>
+        </div>
+    </div>
+
+    <script>
+        alert('Вы точно хотите открыть секрет?');
+        alert('Точно?');
+        alert('Ты точно хочещь его увидеть?');
+        alert('Может не надо?');
+        alert('Может все ж таки уйдеш?');
+        alert('Если ты дальше будещь подтверждать действие, то вилетит скример.');
+        alert('Он будет через...');
+        alert('3');
+        alert('2');
+        alert('1');
+        alert('БУ! ┗( T﹏T )┛');
+        alert('Не испугался?');
+        alert('Ладно. Проходи.');
+        alert('Только подожди.');
+        alert('Загадай число.');
+        function revealSecret() {
+            alert('Ты думал, что я отстану?');
+            alert('Нет. Я не отстану.');
+            alert('Тебе что реально нужно посмотреть что будет дальше?');
+            alert('Я так понимаю, что да.');
+            alert('Ладно. даю тебе еще один шанс. Смотри.');
+            const secretDiv = document.getElementById('secretContent');
+            secretDiv.style.display = 'block';
+            const hintDiv = document.querySelector('.hint');
+            hintDiv.style.display = 'none'; // Скрываем подсказку после клика
+        }
+        function consolOpen(){
+            alert('Привет еще раз');
+            alert('Как твои дела?');
+            alert("Как учеба/работа?");
+            alert('А и кстате.');
+            alert("Как ты уже заметил.");
+            alert('Я все еще сдесь.');
+            alert('...');
+            alert('...');
+            alert('...');
+            alert('Ты все еще сдесь?');
+            alert('Понятно.');
+            alert('Ты не сдаещься.');
+            alert('.');
+            alert('..');
+            alert('...');
+            alert('....');
+            alert('...');
+            alert('..');
+            alert('.');
+            alert('');
+            alert('А и кстате.');
+            alert('ТЫ')
+            alert('ЗА');
+            alert('ТРО...');
+            alert('ОЙ...');
+            alert('Меня не туда повело :(...');
+            alert('Ладно.');
+            alert('Смотри консоль.');
+            alert('А и досвидания.');
+        }
+        console.log('Привет. Что ты сдесь делаещь?')
+        console.log('Хочещь скажу интересный факт?')
+        console.log('Ну от он.')
+        console.log('Весь етот сайт уместился меньще чем у 170 строк.')
+        console.log('Хочещь еще покажу, что нашол на ютубе?')
+        console.log('А и помниш ти вводил число')
+        let numberStr = prompt("Введите число 1 или 0:");
+        let number = parseInt(numberStr);
+        if (number == 1){
+            console.log('Ты ввел правильное число. Посмотри видео ↓.')
+            console.log("https://youtu.be/dQw4w9WgXcQ?feature=shared")
+        }else{
+            console.log('Ну ты ввел 0, и ето неправильно. Тебе не повезло.')
+            console.log('Ну тогда пока.')
+        }
+    </script>
+</body>
+</html>
